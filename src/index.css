@@ -89,12 +89,14 @@ label:hover {
   grid-gap: 40px;
 }
 .img-wrap {
+  cursor: pointer;
   overflow: hidden;
   height: 0;
   padding: 50% 0;
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
+  border-radius: 8px;
 }
 .img-wrap img {
   min-width: 100%;
@@ -106,3 +108,11 @@ label:hover {
 }
 
 /* modal styles */
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+  }
+}
